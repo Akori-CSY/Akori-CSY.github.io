@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">  <!-- keeps the site out of Google; delete this line to let Google list it -->
+  <title>Penetration Testing Assignment | Chan Sao Yan</title>
+  <meta name="description" content="Penetration test of a Linux VM in VirtualBox with Kali Linux, Nmap, Metasploit, Burp Suite and John the Ripper, benchmarked against CIS.">
+  <link rel="icon" type="image/png" href="assets/graphics/logo_csy.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Mono:wght@500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <a class="brand" href="index.html"><img src="assets/graphics/logo_csy.png" alt="" width="36" height="36"><span>Chan Sao Yan</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="job-fit.html">Job Fit</a></li>
+        <li class="has-sub"><a href="projects.html" aria-current="page">Projects</a><ul class="sub"><li><a href="project-network-security.html">Network Security Project</a></li><li><a href="project-penetration-testing.html" aria-current="page">Penetration Testing Assignment</a></li><li><a href="project-firewall-labs.html">Firewall Configuration Labs</a></li><li><a href="project-traffic-analysis.html">Network Traffic Analysis</a></li></ul></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="banner">
+      <div class="wrap">
+        <a class="back" href="projects.html">&larr; All projects</a>
+        <span class="eyebrow">&gt; nmap -sV</span>
+        <h1>Penetration Testing Assignment</h1>
+        <dl class="meta"><div><dt>Module</dt><dd>Ethical Hacking</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Solo / team</dt><dd>Solo (presented individually)</dd></div><div><dt>Tools</dt><dd>Kali Linux, Nmap, Metasploit, Burp Suite, John the Ripper</dd></div><div><dt>Proves</dt><dd>OS hardening, testing and recording results</dd></div></dl>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split">
+        <div>
+          <h2>Summary</h2>
+          <p>I conducted a penetration test on a Linux virtual machine in VirtualBox within a controlled lab, using techniques such as SQL injection and password cracking. I benchmarked the target against CIS Benchmarks, pinpointing configuration gaps and proposing hardening measures, and recorded findings, evidence and remediation steps in a full technical report.</p>
+        </div>
+        <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S6">[TODO: S6 VirtualBox Manager showing the Kali and target VMs]</div><figcaption><b>Proves:</b> Testing was done in an isolated lab.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <details class="how">
+          <summary>How I did it</summary>
+          <ol class="steps">
+            <li>
+              <h3>Scan the target</h3>
+              <p>Ran a service scan of the target with Nmap.</p>
+              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S7">[TODO: S7 Nmap service scan (-sV) of the target]</div><figcaption><b>Proves:</b> Systematic reconnaissance before testing.</figcaption></figure>
+            </li>
+            <li>
+              <h3>Exploit a vulnerability</h3>
+              <p>Used Metasploit against the target.</p>
+              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S8">[TODO: S8 Metasploit exploit module and the session it opened]</div><figcaption><b>Proves:</b> Testing a system following a set procedure.</figcaption></figure>
+            </li>
+            <li>
+              <h3>Test for SQL injection</h3>
+              <p>Intercepted requests in Burp Suite and tested an SQL injection payload.</p>
+              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S9">[TODO: S9 Burp Suite intercepted request with the SQL injection payload (and S10: the page showing the result)]</div><figcaption><b>Proves:</b> Web application testing with recorded evidence.</figcaption></figure>
+            </li>
+            <li>
+              <h3>Crack passwords</h3>
+              <p>Used John the Ripper for password cracking.</p>
+              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S11">[TODO: S11 John the Ripper result, hashes and passwords blurred]</div><figcaption><b>Proves:</b> Testing password strength.</figcaption></figure>
+            </li>
+            <li>
+              <h3>Benchmark and report</h3>
+              <p>Evaluated hardening against CIS Benchmarks and wrote the full report with findings, evidence and remediation.</p>
+              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S12">[TODO: S12 report cover page, CIS Benchmark findings table, remediation section]</div><figcaption><b>Proves:</b> Recording results and reporting in a structured format.</figcaption></figure>
+            </li>
+          </ol>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap narrow">
+        <h2>Result and what I learnt</h2>
+        <p>The report identified configuration gaps against CIS Benchmarks and recommended remediation steps, with each test procedure and result documented.</p>
+        <p>This project showed me what it was really testing, and where I stand: what I have understood from class so far, and what I still need to work on. It also pushed me to learn new things quickly and adapt to them, which sharpened my skills.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap narrow">
+        <h2>Evidence</h2>
+        <p class="todo-block">[TODO: E1, 1 to 2 pages from your own pen test report: the findings summary table and the remediation section.]</p>
+        <div class="btns"><a class="btn btn-primary" href="job-fit.html">See how this fits the role</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="mailto:saoyan.chan@gmail.com">saoyan.chan@gmail.com</a> · <a href="https://www.linkedin.com/in/chan-sao-yan-b69aba343" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p class="disclaimer">All security testing shown was carried out in authorised Temasek Polytechnic lab environments or my own home lab.</p>
+      <p><a href="index.html">Home</a> · <a href="job-fit.html">Job Fit</a> · <a href="projects.html">Projects</a> · <a href="experience.html">Experience</a> · <a href="certifications.html">Certifications</a> · <a href="about.html">About</a> · <a href="resume.html">Resume</a></p>
+      <p>&copy; 2026 Chan Sao Yan</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

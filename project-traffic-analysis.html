@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">  <!-- keeps the site out of Google; delete this line to let Google list it -->
+  <title>Network Traffic Analysis (ongoing) | Chan Sao Yan</title>
+  <meta name="description" content="Ongoing coursework analysing network traffic captures in Wireshark for the Incident Response and Management module.">
+  <link rel="icon" type="image/png" href="assets/graphics/logo_csy.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Mono:wght@500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <a class="brand" href="index.html"><img src="assets/graphics/logo_csy.png" alt="" width="36" height="36"><span>Chan Sao Yan</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="job-fit.html">Job Fit</a></li>
+        <li class="has-sub"><a href="projects.html" aria-current="page">Projects</a><ul class="sub"><li><a href="project-network-security.html">Network Security Project</a></li><li><a href="project-penetration-testing.html">Penetration Testing Assignment</a></li><li><a href="project-firewall-labs.html">Firewall Configuration Labs</a></li><li><a href="project-traffic-analysis.html" aria-current="page">Network Traffic Analysis</a></li></ul></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="banner">
+      <div class="wrap">
+        <a class="back" href="projects.html">&larr; All projects</a>
+        <span class="eyebrow">&gt; wireshark</span>
+        <h1>Network Traffic Analysis (ongoing)</h1>
+        <dl class="meta"><div><dt>Module</dt><dd>Incident Response and Management</dd></div><div><dt>Year</dt><dd>2026 (ongoing)</dd></div><div><dt>Solo / team</dt><dd>Solo (module work and self-practice)</dd></div><div><dt>Tools</dt><dd>Wireshark</dd></div><div><dt>Proves</dt><dd>Preventive IT security activities</dd></div></dl>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split">
+        <div>
+          <h2>Summary</h2>
+          <p>In Incident Response and Management lab classes, I analyse packet capture (PCAP) files provided by my lecturer in Wireshark, as practice for the module&rsquo;s practical test. This is building my foundation in detecting suspicious network activity. I have also practised with Wireshark on my own. This module is ongoing.</p>
+        </div>
+        <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S15">[TODO: S15 Wireshark capture with a display filter applied]</div><figcaption><b>Proves:</b> Filtering traffic to find activity of interest.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <details class="how">
+          <summary>How I did it</summary>
+          <ol class="steps">
+            <li>
+              <h3>Filter the capture</h3>
+              <p>Opened the lab PCAP file and applied display filters to focus on specific traffic, such as DHCP requests and failed connections.</p>
+              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S15">[TODO: S15 Wireshark capture with a display filter applied]</div><figcaption><b>Proves:</b> Using filters to focus on relevant traffic.</figcaption></figure>
+            </li>
+            <li>
+              <h3>Follow a conversation</h3>
+              <p>Used Follow TCP Stream to read a full conversation between two hosts from start to finish.</p>
+              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S16">[TODO: S16 Follow TCP Stream window]</div><figcaption><b>Proves:</b> Reconstructing what happened in a network conversation.</figcaption></figure>
+            </li>
+            <li>
+              <h3>Look at the bigger picture</h3>
+              <p>Used the Statistics menu, including the I/O Graph, to see how traffic changed over time and spot unusual patterns.</p>
+              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S25">[TODO: S25 Statistics, I/O Graph]</div><figcaption><b>Proves:</b> Reviewing traffic patterns, a routine preventive activity.</figcaption></figure>
+            </li>
+          </ol>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap narrow">
+        <h2>Result and what I learnt</h2>
+        <p>From the captures, I identified DHCP requests, the IP addresses of devices, the phone model a device was using, and failed connections.</p>
+        <p>I learnt how powerful Wireshark is. A single capture can reveal a surprising amount about a device and what it is doing on the network. That was eye-opening, and a little worrying, because it showed me how much someone could learn from captured traffic, and why monitoring and protecting it matters.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap narrow">
+        <h2>Evidence</h2>
+        <p class="todo-block">[TODO: E4, your own answers or notes from the PCAP lab exercise, if you have them. Otherwise delete this section.]</p>
+        <div class="btns"><a class="btn btn-primary" href="job-fit.html">See how this fits the role</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="mailto:saoyan.chan@gmail.com">saoyan.chan@gmail.com</a> · <a href="https://www.linkedin.com/in/chan-sao-yan-b69aba343" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p class="disclaimer">All security testing shown was carried out in authorised Temasek Polytechnic lab environments or my own home lab.</p>
+      <p><a href="index.html">Home</a> · <a href="job-fit.html">Job Fit</a> · <a href="projects.html">Projects</a> · <a href="experience.html">Experience</a> · <a href="certifications.html">Certifications</a> · <a href="about.html">About</a> · <a href="resume.html">Resume</a></p>
+      <p>&copy; 2026 Chan Sao Yan</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">  <!-- keeps the site out of Google; delete this line to let Google list it -->
+  <title>Projects | Chan Sao Yan</title>
+  <meta name="description" content="Lab project case studies: network security, penetration testing, firewall configuration and traffic analysis.">
+  <link rel="icon" type="image/png" href="assets/graphics/logo_csy.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Mono:wght@500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <a class="brand" href="index.html"><img src="assets/graphics/logo_csy.png" alt="" width="36" height="36"><span>Chan Sao Yan</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="job-fit.html">Job Fit</a></li>
+        <li class="has-sub"><a href="projects.html" aria-current="page">Projects</a><ul class="sub"><li><a href="project-network-security.html">Network Security Project</a></li><li><a href="project-penetration-testing.html">Penetration Testing Assignment</a></li><li><a href="project-firewall-labs.html">Firewall Configuration Labs</a></li><li><a href="project-traffic-analysis.html">Network Traffic Analysis</a></li></ul></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="banner">
+      <div class="wrap">
+        <span class="eyebrow">&gt; ls ./projects</span>
+        <h1>Projects</h1>
+        <p>Four coursework projects from Temasek Polytechnic labs. Each one shows what I configured or tested, how I did it, and which job requirement it proves.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="grid grid-2">
+          <a class="card" href="project-network-security.html">
+            <img src="assets/graphics/tile_netsec.png" alt="" width="1200" height="800" loading="lazy">
+            <div class="card-body">
+              <h3>Network Security Project</h3>
+              <p>Built a segmented network in Cisco Packet Tracer that operated as designed.</p>
+              <ul class="tags"><li>Cisco Packet Tracer</li><li>VLANs</li><li>ACLs</li><li>WLC</li><li>Routing</li></ul>
+              <p class="proves"><b>Proves:</b> Configuration, troubleshooting, network drawings</p>
+            </div>
+          </a>
+          <a class="card" href="project-penetration-testing.html">
+            <img src="assets/graphics/tile_pentest.png" alt="" width="1200" height="800" loading="lazy">
+            <div class="card-body">
+              <h3>Penetration Testing Assignment</h3>
+              <p>Tested a Linux VM, benchmarked it against CIS and wrote a full report with remediation.</p>
+              <ul class="tags"><li>&gt; nmap -sV</li><li>Kali Linux</li><li>Metasploit</li><li>Burp Suite</li><li>John the Ripper</li></ul>
+              <p class="proves"><b>Proves:</b> OS hardening, testing and recording results</p>
+            </div>
+          </a>
+          <a class="card" href="project-firewall-labs.html">
+            <img src="assets/graphics/tile_firewall.png" alt="" width="1200" height="800" loading="lazy">
+            <div class="card-body">
+              <h3>Firewall Configuration Labs</h3>
+              <p>Configured inbound and outbound rules to restrict unauthorised network traffic.</p>
+              <ul class="tags"><li>Windows Firewall</li><li>iptables</li></ul>
+              <p class="proves"><b>Proves:</b> Basic firewall configuration</p>
+            </div>
+          </a>
+          <a class="card" href="project-traffic-analysis.html">
+            <img src="assets/graphics/tile_wireshark.png" alt="" width="1200" height="800" loading="lazy">
+            <div class="card-body">
+              <h3>Network Traffic Analysis (ongoing)</h3>
+              <p>Analysed lab PCAPs to identify DHCP requests, device details and failed connections.</p>
+              <ul class="tags"><li>Wireshark</li><li>PCAP</li><li>Follow TCP Stream</li><li>I/O Graph</li></ul>
+              <p class="proves"><b>Proves:</b> Preventive IT security activities</p>
+            </div>
+          </a>
+        </div>
+        <div class="btns"><a class="btn btn-primary" href="job-fit.html">See how they match the job</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="mailto:saoyan.chan@gmail.com">saoyan.chan@gmail.com</a> · <a href="https://www.linkedin.com/in/chan-sao-yan-b69aba343" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p class="disclaimer">All security testing shown was carried out in authorised Temasek Polytechnic lab environments or my own home lab.</p>
+      <p><a href="index.html">Home</a> · <a href="job-fit.html">Job Fit</a> · <a href="projects.html">Projects</a> · <a href="experience.html">Experience</a> · <a href="certifications.html">Certifications</a> · <a href="about.html">About</a> · <a href="resume.html">Resume</a></p>
+      <p>&copy; 2026 Chan Sao Yan</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
