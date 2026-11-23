@@ -79,6 +79,7 @@ section { padding: 48px 0; }
 .banner { padding: 40px 0 36px; }
 .banner h1 { color: #fff; margin-bottom: .25em; }
 .banner p { color: #DCE7F1; margin: 0; max-width: 65ch; }
+.banner a:not(.btn) { color: var(--accent-dark); }
 .eyebrow { font: 500 .8rem var(--mono); color: var(--accent-dark); letter-spacing: .04em; margin-bottom: .6em; display: block; }
 @media (min-width: 900px) {
   .hero { padding: 88px 0; }
@@ -113,6 +114,10 @@ section { padding: 48px 0; }
 .card img { aspect-ratio: 3 / 2; object-fit: cover; width: 100%; }
 .card img.cert { aspect-ratio: 1.3; object-fit: contain; background: var(--light); border-bottom: 1px solid var(--line); }
 .card .proves { font-size: .95rem; color: var(--muted); }
+/* Skills page: proof picture first, then the job requirement it answers */
+.card img.proof { aspect-ratio: 16 / 10; object-fit: cover; border-bottom: 1px solid var(--line); }
+.card .req { font: 500 .72rem var(--mono); color: var(--accent); text-transform: uppercase; letter-spacing: .03em; }
+.card.skill .more { margin-top: auto; color: var(--accent); }
 .card .proves b { color: var(--brand); }
 .card .more { margin-top: auto; padding-top: 6px; font-weight: 600; }
 a.card { text-decoration: none; color: inherit; transition: border-color .15s, transform .15s; }
