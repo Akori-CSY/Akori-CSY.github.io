@@ -74,8 +74,8 @@
             </li>
             <li>
               <h3>Test and troubleshoot</h3>
-              <p>Troubleshot connectivity and configuration faults until all devices communicated as designed.</p>
-              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S5">[TODO: S5 a ping that works between allowed VLANs, and one blocked by the ACL]</div><figcaption><b>Proves:</b> Testing that the network works as designed and the ACL blocks what it should.</figcaption></figure>
+              <p>Troubleshot connectivity and configuration faults until all devices communicated as designed. Then I tested the firewall in both directions: the internal management PC can reach the DNS server in the DMZ, but a ping from the DNS server back into the internal network is blocked.</p>
+              <figure class="shot"><a href="assets/screenshots/S5.png" target="_blank" rel="noopener"><img src="assets/screenshots/S5.png" alt="Two ping tests. Allowed: the internal management PC pings the DMZ DNS server at 10.89.38.3 and gets 4 replies. Blocked: the DMZ DNS server pings the management PC at 10.89.32.14 and all 4 requests time out." width="1394" height="970" loading="lazy"></a><figcaption><b>Proves:</b> the firewall lets internal users reach DMZ servers, but stops DMZ servers reaching the internal network.</figcaption></figure>
             </li>
           </ol>
         </details>
