@@ -59,13 +59,13 @@
           <ol class="steps">
             <li>
               <h3>Segment the network with VLANs</h3>
-              <p>Configured VLANs on the switches to separate the network into segments.</p>
-              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S2">[TODO: S2 Switch CLI: show vlan brief]</div><figcaption><b>Proves:</b> VLAN configuration on a switch.</figcaption></figure>
+              <p>Configured VLANs on the switches to separate the network into segments: data, wireless, voice, management and users, plus an unused VLAN set aside as the native VLAN.</p>
+              <figure class="shot"><a href="assets/screenshots/S2.png" target="_blank" rel="noopener"><img src="assets/screenshots/S2.png" alt="show vlan brief on SITE-A-Switch listing VLANs 50 DATA, 60 WLAN, 110 VOICE, 605 MGT, 805 USERS and 999 NATIVE-UNUSED with their assigned ports" width="1450" height="930" loading="lazy"></a><figcaption><b>Proves:</b> VLAN configuration on a switch.</figcaption></figure>
             </li>
             <li>
               <h3>Restrict traffic with ACLs</h3>
-              <p>Implemented Cisco access control lists on the router.</p>
-              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S3">[TODO: S3 Router CLI: ACL lines and show access-lists]</div><figcaption><b>Proves:</b> ACL configuration that controls traffic between segments.</figcaption></figure>
+              <p>Implemented Cisco access control lists on the router (ZBFW-1): a standard ACL for a permitted subnet, and an extended ACL allowing DHCP traffic from a specific host.</p>
+              <figure class="shot"><a href="assets/screenshots/S3.png" target="_blank" rel="noopener"><img src="assets/screenshots/S3.png" alt="show access-lists on router ZBFW-1: standard access list 10 permitting 10.89.32.0 0.0.3.255, and extended access list 110 permitting UDP bootps from host 10.89.38.4" width="1420" height="776" loading="lazy"></a><figcaption><b>Proves:</b> ACL configuration that controls traffic between segments.</figcaption></figure>
             </li>
             <li>
               <h3>Configure the Wireless LAN Controller</h3>
