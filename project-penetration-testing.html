@@ -39,7 +39,7 @@
         <a class="back" href="projects.html">&larr; All projects</a>
         <span class="eyebrow">&gt; nmap -sV</span>
         <h1>Penetration Testing Assignment</h1>
-        <dl class="meta"><div><dt>Module</dt><dd>Ethical Hacking</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Solo / team</dt><dd>Solo (presented individually)</dd></div><div><dt>Tools</dt><dd>Kali Linux, Nmap, Metasploit, Burp Suite, John the Ripper</dd></div><div><dt>Proves</dt><dd>OS hardening, testing and recording results</dd></div></dl>
+        <dl class="meta"><div><dt>Module</dt><dd>Ethical Hacking</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Solo / team</dt><dd>Solo (presented individually)</dd></div><div><dt>Tools</dt><dd>Kali Linux, Nmap, Gobuster, Metasploit, Burp Suite, John the Ripper</dd></div><div><dt>Proves</dt><dd>OS hardening, testing and recording results</dd></div></dl>
       </div>
     </section>
 
@@ -80,8 +80,8 @@
             </li>
             <li>
               <h3>Benchmark and report</h3>
-              <p>Evaluated hardening against CIS Benchmarks and wrote the full report with findings, evidence and remediation.</p>
-              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S12">[TODO: S12 report cover page, CIS Benchmark findings table, remediation section]</div><figcaption><b>Proves:</b> Recording results and reporting in a structured format.</figcaption></figure>
+              <p>Evaluated hardening against CIS Benchmarks and wrote the full report: six findings, each scored with CVSS v3.1, with evidence and remediation steps.</p>
+              <figure class="shot"><a href="assets/screenshots/E1b.png" target="_blank" rel="noopener"><img src="assets/screenshots/E1b.png" alt="Findings summary table from my report: six findings F001 to F006 on host 10.10.1.181 with CVSS v3 scores from 5.3 Medium to 9.8 Critical" width="1150" height="994" loading="lazy"></a><figcaption><b>Proves:</b> recording results in a structured format, each finding scored with CVSS v3.1.</figcaption></figure>
             </li>
           </ol>
         </details>
@@ -91,7 +91,7 @@
     <section>
       <div class="wrap narrow">
         <h2>Result and what I learnt</h2>
-        <p>The report identified configuration gaps against CIS Benchmarks and recommended remediation steps, with each test procedure and result documented.</p>
+        <p>The report documented six findings on the target, rated Medium to Critical with CVSS v3.1: an exposed file and plaintext credentials in the web directory, weak SSH authentication, two privilege-escalation paths (a vulnerable pkexec and a vulnerable kernel), and sensitive data stored insecurely. It also identified configuration gaps against CIS Benchmarks, with each test procedure, result and remediation step documented.</p>
         <p>This project showed me what it was really testing, and where I stand: what I have understood from class so far, and what I still need to work on. It also pushed me to learn new things quickly and adapt to them, which sharpened my skills.</p>
       </div>
     </section>
@@ -99,7 +99,8 @@
     <section class="alt">
       <div class="wrap narrow">
         <h2>Evidence</h2>
-        <p class="todo-block">[TODO: E1, 1 to 2 pages from your own pen test report: the findings summary table and the remediation section.]</p>
+        <p>One finding from my report, written up the way a client would receive it: risk rating, impact, technical evidence and recommendations.</p>
+        <figure class="shot"><a href="assets/screenshots/E1a.png" target="_blank" rel="noopener"><img src="assets/screenshots/E1a.png" alt="Report finding 7.2, Plaintext Credentials Exposed in Web Directory: CVSS 3.1 score 7.5 High, impact, technical details with a screenshot of note.txt (password hidden), and three recommendations" width="760" height="990" loading="lazy"></a><figcaption><b>Proves:</b> clear, structured reporting of a finding with its fix. The lab password is hidden on purpose.</figcaption></figure>
         <div class="btns"><a class="btn btn-primary" href="skills.html">See all my skills</a></div>
       </div>
     </section>
