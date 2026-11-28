@@ -64,9 +64,9 @@
               <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S7">[TODO: S7 Nmap service scan (-sV) of the target]</div><figcaption><b>Proves:</b> Systematic reconnaissance before testing.</figcaption></figure>
             </li>
             <li>
-              <h3>Exploit a vulnerability</h3>
-              <p>Used Metasploit against the target.</p>
-              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S8">[TODO: S8 Metasploit exploit module and the session it opened]</div><figcaption><b>Proves:</b> Testing a system following a set procedure.</figcaption></figure>
+              <h3>Log in with the exposed credentials</h3>
+              <p>Used Metasploit&rsquo;s <code>ssh_login</code> module with the credentials found in the exposed <code>note.txt</code> file. The login succeeded and opened an SSH session on the target, confirming finding F003.</p>
+              <figure class="shot"><a href="assets/screenshots/S8.jpg" target="_blank" rel="noopener"><img src="assets/screenshots/S8.jpg" alt="Metasploit ssh_login module run against 10.10.1.181 port 22 with username randy (password hidden): Success, and SSH session 1 opened" width="2083" height="755" loading="lazy"></a><figcaption><b>Proves:</b> confirming a finding by testing it, following a set procedure. The password is hidden on purpose.</figcaption></figure>
             </li>
             <li>
               <h3>Test for SQL injection</h3>
