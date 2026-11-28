@@ -60,8 +60,8 @@
           <ol class="steps">
             <li>
               <h3>Scan the target</h3>
-              <p>Ran a service scan of the target with Nmap.</p>
-              <figure class="shot"><div class="ph" style="aspect-ratio:16 / 10" role="img" aria-label="Placeholder: S7">[TODO: S7 Nmap service scan (-sV) of the target]</div><figcaption><b>Proves:</b> Systematic reconnaissance before testing.</figcaption></figure>
+              <p>Ran a service scan of the target with Nmap (<code>nmap -sV</code>) to find its open ports and the software versions behind them, which shows where to test next.</p>
+              <figure class="shot"><a href="assets/screenshots/S7.jpg" target="_blank" rel="noopener"><img src="assets/screenshots/S7.jpg" alt="nmap -sV scan of lab machine 10.10.1.55 showing open ports 21 FTP (ProFTPD), 22 SSH (OpenSSH 7.6p1), 80 and 443 Apache 2.4.41, and 3306 MariaDB" width="1804" height="829" loading="lazy"></a><figcaption>A service scan I re-ran on another lab machine for this portfolio, to show the technique. <b>Proves:</b> systematic reconnaissance before testing.</figcaption></figure>
             </li>
             <li>
               <h3>Log in with the exposed credentials</h3>
